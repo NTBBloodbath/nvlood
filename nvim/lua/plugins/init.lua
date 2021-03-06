@@ -26,10 +26,19 @@ return require('packer').startup(function()
     -- Colorschemes
     use {
         'sainnhe/sonokai',
+        'bkegley/gloombuddy',
+        'npxbr/gruvbox.nvim',
         'wadackel/vim-dogrun',
         'joshdick/onedark.vim',
-        'ghifarit53/tokyonight-vim'
+        'ghifarit53/tokyonight-vim',
+        'kyazdani42/nvim-palenight.lua'
     }
+    --- Colorscheme requirements
+    -- Required by gruvbox
+    use 'rktjmp/lush.nvim'
+    -- Required by palenight
+    use 'tjdevries/colorbuddy.nvim'
+
     -- File tree, don't use the latest commit 'cause it's broken, at least for me
     use {
         'kyazdani42/nvim-tree.lua',

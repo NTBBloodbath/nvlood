@@ -18,23 +18,28 @@ if fn.has('nvim') == 1 then
     o.termguicolors = true
 end
 
--- Sonokai colorscheme configuration
+-- Sonokai configuration
 g.sonokai_style = "andromeda"
 g.sonokai_enable_italic = false
 g.sonokai_italic_comment = false
 g.sonokai_current_word = 'bold'
 g.sonokai_better_performance = true
-g.sonokai_transparent_background = false
--- Onedark colorscheme configuration
+g.sonokai_transparent_background = true
+
+-- Onedark configuration
 g.onedark_hide_endofbuffer = true
 g.onedark_terminal_italics = false
--- Tokyonight colorscheme configuration
+
+-- Tokyonight configuration
 g.tokyonight_style = 'storm'
 g.tokyonight_enable_italic = false
+
 
 --- Custom colorschemes:
 -- dogrun
 -- sonokai
 -- onedark
+-- gruvbox
+-- palenight
 -- tokyonight
 cmd('colorscheme tokyonight')
