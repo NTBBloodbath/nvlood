@@ -8,6 +8,12 @@
 
 ## Setup
 
+> **NOTE:** If you see tons of errors at first init, it can be due to the following things
+>
+> 1. You didn't install packer.nvim, see step 2 and follow the installation guide.
+>
+> 2. You haven't installed the plugins yet, see steps 3 and 4.
+
 1. Clone this repository and move the nvim folder to your configuration folder
    (`~/.config/nvim`).
 2. Install [`packer.nvim`](https://github.com/wbthomason/packer.nvim).
@@ -18,6 +24,7 @@
 
 - Mouse support, for those who wants to use their mouse to work within Neovim.
 - Autosave and auto formatting _you can keep doing it manually_.
+- A solid collection of language packs, see [vim-polyglot](https://github.com/sheerun/vim-polyglot).
 - Fully featured keybindings and leader menu like SpaceVim.
 - Distraction-free mode with [Goyo](https://github.com/junegunn/goyo.vim).
 - Do you need to have several buffers open at the same time without worrying
