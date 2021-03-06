@@ -138,10 +138,8 @@ return require('packer').startup(function()
     use { 'michaelb/sniprun', run = 'bash install.sh' }
     -- EditorConfig support
     use 'editorconfig/editorconfig-vim'
-    -- TOML support
-    use 'cespare/vim-toml'
-    -- Crystal support
-    use 'vim-crystal/vim-crystal'
+    -- Multiple language packs
+    use 'sheerun/vim-polyglot'
 
 ---[[----------]]---
 --      Misc      --
