@@ -7,6 +7,32 @@ capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 -- Signature help
 require('lsp_signature').on_attach()
+-- Vscode-like pictograms on completion
+require('lspkind').init({
+    with_text = true,
+    symbol_map = {
+        Text = '',
+        Method = 'ƒ',
+        Function = '',
+        Constructor = '',
+        Variable = '',
+        Class = '',
+        Interface = 'ﰮ',
+        Module = '',
+        Property = '',
+        Unit = '',
+        Value = '',
+        Enum = '了',
+        Keyword = '',
+        Snippet = '﬌',
+        Color = '',
+        File = '',
+        Folder = '',
+        EnumMember = '',
+        Constant = '',
+        Struct = ''
+    },
+})
 
 on_attach = function(client, bufnr)
     function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end

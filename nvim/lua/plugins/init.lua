@@ -113,10 +113,18 @@ return require('packer').startup(function()
     -- Completion plugin
     use {
         'hrsh7th/nvim-compe',
-        config = require('plugins.nvim-compe')
+        config = require('plugins.nvim-compe'),
+        requires = {
+            -- Completion signatures help
+            {'ray-x/lsp_signature.nvim'},
+            -- Vscode-like pictograms on completion
+            {'onsails/lspkind-nvim'}
+        }
     }
-    -- Completion signatures
+    --[[ -- Completion signatures
     use 'ray-x/lsp_signature.nvim'
+    -- Vscode-like pictograms on completion
+    use 'onsails/lspkind-nvim' ]]
 
 ---[[--------------]]---
 --    File-related    --
