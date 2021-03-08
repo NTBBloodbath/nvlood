@@ -9,6 +9,8 @@ local o = vim.o
 local wo = vim.wo
 -- Buffer-scoped options like buflisted
 local bo = vim.bo
+-- Vim functions
+local fn = vim.fn
 -- Neovim autocmds
 local nvim_cmd = vim.api.nvim_command
 
@@ -44,6 +46,9 @@ o.splitbelow = true
 o.hidden = true
 -- Live substitution
 o.inccommand = "split"
+-- Tree-sitter based folding
+o.foldmethod = "expr"
+o.foldexpr = vim.fn["nvim_treesitter#foldexpr"]()
 
 ---[[------------------]]---
 --     Window options     --
