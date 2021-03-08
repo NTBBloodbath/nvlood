@@ -115,6 +115,8 @@ return require('packer').startup(function()
         'hrsh7th/nvim-compe',
         config = require('plugins.nvim-compe')
     }
+    -- Completion signatures
+    use 'ray-x/lsp_signature.nvim'
 
 ---[[--------------]]---
 --    File-related    --

@@ -5,6 +5,8 @@ nvim_lsp = require('lspconfig')
 -- Snippets support
 capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
+-- Signature help
+require('lsp_signature').on_attach()
 
 on_attach = function(client, bufnr)
     function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
