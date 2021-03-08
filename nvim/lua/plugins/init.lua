@@ -136,6 +136,14 @@ return require('packer').startup(function()
     -- Code runner. Run install.sh as a post-installation script,
     -- it will download or compile the sniprun binary.
     use { 'michaelb/sniprun', run = 'bash install.sh' }
+    -- Testing plugin
+    use {
+        'rcarriga/vim-ultest',
+        run = ':UpdateRemotePlugins',
+        requires = {
+            {'janko/vim-test'}
+        }
+    }
     -- EditorConfig support
     use 'editorconfig/editorconfig-vim'
     -- Multiple language packs
